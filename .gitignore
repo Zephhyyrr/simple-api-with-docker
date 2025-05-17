@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+.env
+.env.*.local
+
+uploads/
+
+prisma/migrations/
+
+*.log
+npm-debug.log*
+
+dist/
+build/
+
+*.tsbuildinfo
+
+.vscode/
