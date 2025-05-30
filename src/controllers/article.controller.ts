@@ -58,7 +58,7 @@ export const deleteArticle = async (req: Request, res: Response, next: NextFunct
     try {
         const { id } = req.params;
         const deletedArticle = await deleteArticleService(id);
-        res.json({ success: true, data: deletedArticle });
+        res.json({ success: true, data: `Artikel dengan id: ${deletedArticle.id} berhasil dihapus` });
     } catch (error) {
         next(error);
     }
